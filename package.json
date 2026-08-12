@@ -1,0 +1,15 @@
+{
+  "name": "customer-test-app",
+  "version": "1.0.0",
+  "description": "TaskFlow Demo Customer Application for Autonomous Bugfix Testing",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {}
+}

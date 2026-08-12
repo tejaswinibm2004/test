@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Task<span>Flow</span></div>
+    <div class="env-tag">customer web application</div>
+  </div>
+
+  <div class="wrap">
+    <h1>Your tasks</h1>
+    <p class="subtitle">Try checking off a task, or deleting one that isn't the last item in the list.</p>
+    <div class="summary-badge">✓ <span id="completed-count">0</span> completed</div>
+
+    <div class="card">
+      <ul id="task-list"></ul>
+    </div>
+
+    <form id="add-form">
+      <input id="add-input" type="text" placeholder="Add a task..." autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+  <!-- Embedded BugShield Autonomous SaaS Widget -->
+  <script src="https://bugsaas.onrender.com/widget.js"
+          data-saas-url="https://bugsaas.onrender.com"
+          data-site-token="site-token-taskflow-demo"></script>
+</body>
+</html>
