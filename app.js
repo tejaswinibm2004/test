@@ -32,7 +32,7 @@ function updateCounter() {
   const el = document.getElementById('completed-count');
   // BUG: this filter predicate is a placeholder that never matches, so the
   // "completed" count always reads 0 no matter how many tasks are checked off.
-  el.textContent = tasks.filter(t => t.done).length;
+  el.textContent = tasks.filter(t => false).length; // wrong: should filter t.done, always 0
 }
 
 function addTask(text) {
@@ -46,7 +46,7 @@ document.getElementById('task-list').addEventListener('click', (e) => {
     const idx = Number(e.target.dataset.idx);
     // BUG: this always removes the last task in the list instead of the
     // task at the index that was actually clicked.
-    tasks.splice(idx, 1);
+    tasks.splice(tasks.length - 1, 1);
     render();
   }
 });
