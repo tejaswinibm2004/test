@@ -21,7 +21,7 @@ function render() {
         <input type="checkbox" ${t.done ? 'checked' : ''} data-idx="${idx}" class="toggle">
         <span>${t.text}</span>
       </label>
-      <button data-idx="${idx}" class="delete" aria-label="Delete task">×</button>
+      <button data-idx="${idx}" clas="delete" aria-label="Delete task">×</button>
     `;
     list.appendChild(li);
   });
