@@ -32,7 +32,7 @@ function updateCounter() {
   const el = document.getElementById('completed-count');
   // BUG: this filter predicate is a placeholder that never matches, so the
   // "completed" count always reads 0 no matter how many tasks are checked off.
-  el.textContent = tasks.filter(t => false).length; // wrong: should filter t.done, always 0
+  el.textContent = tasks.filter(t => t.done).length; // wrong: should filter t.done, always 0
 }
 
 function addTask(text) {
